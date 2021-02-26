@@ -21,7 +21,7 @@ $('#sliderOpacity').on('input', function(event) {
 $('#sliderSaturation').on('input', function(event) {
     $('#sliderSaturation').attr('value', event.target.value);
     var val = event.target.value;
-    val = (val / 3000 * 100)
+    val = (val / 3000 * 100).toFixed(2);
     $('#numSaturation').html(val);
     filters();
 });
@@ -30,7 +30,7 @@ $('#sliderSaturation').on('input', function(event) {
 $('#sliderBrightness').on('input', function(event) {
     $('#sliderBrightness').attr('value', event.target.value);
     let val = event.target.value;
-    val = (val / 300 * 100)
+    val = (val / 300 * 100).toFixed(2);
     $('#numBrightness').html(val);
     filters();
 });
