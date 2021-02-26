@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     //mouseenter
-    $("img").mouseenter(function(event) {
+    $("img").mouseenter(function() {
         $(this).addClass("gray");
         var divprvw = $("<div></div>").attr('id', 'preview');
         var img1 = $("<img></img>").attr('src', $(this).attr('src').replace('square', 'medium')).attr('alt', $(this).attr('alt'));
