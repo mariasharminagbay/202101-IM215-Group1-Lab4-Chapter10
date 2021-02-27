@@ -78,8 +78,6 @@ $('#resetFilters').on('click', function() {
         'hue-rotate(0deg) ' +
         'grayscale(0%) ' +
         'blur(0px)');
-
-
 });
 
 });
